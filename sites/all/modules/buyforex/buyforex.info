@@ -1,0 +1,6 @@
+name = Buy Forex
+description = Adds a buy forex functionality
+core = 7.x
+package = Forex
+
+scripts[] = buyforex_form_validation.js

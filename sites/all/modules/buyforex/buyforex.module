@@ -1,0 +1,244 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: pp
+ * Date: 17/11/15
+ * Time: 1:40 PM
+ */
+/***
+ ************ IMPLEMENTS HOOK MENU *************
+ ****/
+
+function buyforex_menu()
+{
+    $items = array();
+    $items['buyforex'] = array(
+        'title' => '',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array(
+            'buyforex_add_more'
+        ) ,
+        'access callback' => TRUE,
+        'file' => 'buyforex_graceful_degradation.inc',
+        'weight' => 8,
+    );
+    return $items;
+}
+
+function buyforex_block_info()
+{
+    $blocks['buy_forex_content_form'] = array(
+        'info' => t('Buy Forex') ,
+        'tile' => t('Forex') ,
+    );
+    return $blocks;
+}
+
+function buyforex_block_view()
+{
+    $block = array();
+    $block['content'] = "here";
+    return $block;
+}
+
+function buyforex_cron()
+{
+    $currency = get_exchange_rates('INR', 'H');
+    $usd_live = $currency['USD']['cx_rate'];
+    $aud_live = $currency['AUD']['cx_rate'];
+    $sgd_live = $currency['SGD']['cx_rate'];
+    $eur_live = $currency['EUR']['cx_rate'];
+    $gbp_live = $currency['GBP']['cx_rate'];
+    $cad_live = $currency['CAD']['cx_rate'];
+    $taxonomy = taxonomy_get_tree(2);
+    foreach($taxonomy as $term):
+        switch ($term->name)
+        {
+            case "USD":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $usd_live;
+                taxonomy_term_save($tax_obj);
+                break;
+
+            case "AUD":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $aud_live;
+                taxonomy_term_save($tax_obj);
+                break;
+
+            case "SGD":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $sgd_live;
+                taxonomy_term_save($tax_obj);
+                break;
+
+            case "EUR":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $eur_live;
+                taxonomy_term_save($tax_obj);
+                break;
+
+            case "GBP":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $gbp_live;
+                taxonomy_term_save($tax_obj);
+                break;
+
+            case "CAD":
+                $tax_obj = taxonomy_term_load($term->tid);
+                $tax_obj->field_value['und'][0]['value'] = $cad_live;
+                taxonomy_term_save($tax_obj);
+                break;
+        }
+
+    endforeach;
+}
+
+/***
+ ************  *************
+ ****/
+
+function get_exchange_rates($home_currency, $convert_to = '', $additional_targets = array() , $output_type = '')
+{
+    /*
+    * @default_targets: A list of default (popular|moset used) currencies
+    */
+
+    // global $home_currency;
+
+    $default_targets = array(
+        'USD' => 'US Dollar',
+        'EUR' => 'Euro',
+        'GBP' => 'British Pound',
+        'AUD' => 'Australian Dollar',
+        'CAD' => 'Canadian Dollar',
+        'INR' => 'India Rupee',
+        'SGD' => 'Singapore Dollar',
+    );
+    /*
+    * @additional_targets: Add more currencies if available
+    */
+    if (!empty($additional_targets) && is_array($additional_targets))
+    {
+        $target_currencies = array_merge($default_targets, $additional_targets);
+    }
+    else
+    {
+        $target_currencies = $default_targets;
+    }
+
+    /*
+    * @unset: Remove home currency from targets
+    */
+    if (array_key_exists($home_currency, $target_currencies))
+    {
+        unset($target_currencies[$home_currency]);
+    }
+
+    /*
+    * @loop: Loop through the targets and perform lookup on Yahoo! Finance
+    */
+    foreach($target_currencies as $code => $name)
+    {
+        /*
+        * @url: Get the URL for csv file at Yahoo API, based on 'convert_to' option
+        */
+        switch (strtoupper($convert_to))
+        {
+            case 'H': /* Converts targest to home */
+                $url = sprintf("http://finance.yahoo.com/d/quotes.csv?s=%s%s=X&f=sl1d1t1", $code, $home_currency);
+                break;
+
+            case 'T': /* Converts home to targets */
+            default:
+                $url = sprintf("http://finance.yahoo.com/d/quotes.csv?s=%s%s=X&f=sl1d1t1", $home_currency, $code);
+                break;
+        }
+
+        /*
+        * @fopen: open and read API files
+        */
+        $handle = @fopen($url, 'r');
+        if ($handle)
+        {
+            $result = fgets($handle, 4096);
+            fclose($handle);
+        }
+
+        /*
+        * @output: Create output array and add currency code and descriptive (Country) name
+        */
+        $arrOutput[$code] = explode(',', $result);
+        array_unshift($arrOutput[$code], $code); /* Add the code */
+        array_unshift($arrOutput[$code], $name); /* Add the name */
+        /*
+        * @keys: Substitute numerical keys with user friendly ones
+        */
+        $arrOutput[$code] = add_cx_keys($arrOutput[$code]);
+    }
+
+    /*
+    * @object: Convert array to object if required
+    */
+    if (strtoupper($output_type) == 'OBJECT')
+    {
+        $arrOutput = make_array_object($arrOutput);
+    }
+
+    /*
+    * @return: Return the output array or object
+    */
+    return $arrOutput;
+}
+
+/*
+* @function: make_array_object() | array_to_object() - convert an associative array to an object
+*/
+
+function make_array_object($array)
+{
+    $object = new stdClass();
+    return array_to_object($array, $object);
+}
+
+function array_to_object($arr, &$obj)
+{
+    foreach($arr as $key => $val)
+    {
+        if (is_array($val))
+        {
+            $obj->$key = new stdClass();
+            array_to_object($val, $obj->$key);
+        }
+        else
+        {
+            $obj->$key = $val;
+        }
+    }
+
+    return $obj;
+}
+
+/*
+* @function: add_cx_keys( $array )
+*/
+
+function add_cx_keys($array)
+{
+    $target_keys = array(
+        'cx_name',
+        'cx_code',
+        'cx_test',
+        'cx_rate',
+        'cx_date',
+        'cx_time'
+    );
+    $i = 0;
+    foreach($target_keys as $key)
+    {
+        $arrOutput[$key] = $array[$i];
+        $i++;
+    }
+
+    return $arrOutput;
+}

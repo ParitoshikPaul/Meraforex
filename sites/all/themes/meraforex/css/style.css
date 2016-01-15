@@ -1,0 +1,1506 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+/* vietnamese */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Book.otf');
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Book.otf') format('embedded-opentype'),
+    url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Book.otf') format('woff'),
+    url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Book.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Conv_CaeciliaLTStd-Roman';
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/CaeciliaLTStd-Roman.eot');
+    src: local('☺'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/CaeciliaLTStd-Roman.woff') format('woff'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/CaeciliaLTStd-Roman.ttf') format('truetype'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/CaeciliaLTStd-Roman.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Gotham-Bold';
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Bold.eot');
+    src: local('☺'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Bold.woff') format('woff'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Bold.ttf') format('truetype'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Gotham-Medium';
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Medium.eot');
+    src: local('☺'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Medium.woff') format('woff'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Medium.ttf') format('truetype'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/Gotham-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_MyriadPro-Regular';
+    src: url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/MyriadPro-Regular.eot');
+    src: local('☺'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/MyriadPro-Regular.woff') format('woff'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/MyriadPro-Regular.ttf') format('truetype'), url('http://reputationindia.net/development/pp/meraforex/sites/all/themes/meraforex/fonts/MyriadPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal; 
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGClYwVOhDRq2vbpGRTZ7bbs.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFKFh1TDTPrUZWzVp6FtpG8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDovqjS_dXPZszO_XltPdNg.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*
+BASIC ELEMENTS CSS
+*/
+body {
+    font-family: sans-serif;
+}
+h1{
+    font-family: sans-serif;
+}
+/*
+BASIC ELEMENTS CSS ENDS
+*/
+
+
+
+/*
+* Infinite Loader
+*
+* Author: Jonathan Silva
+* Url: http://portfolio.jonathansilva.com.br
+*
+*/
+/* ----- Base ----- */
+/* ----- Loader ----- */
+.loader-cont {
+    background-color: #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.loader-wrapper {
+    width: 148px;
+    height: 100px;
+    position: absolute;
+    margin: -50px 0 0 -74px;
+    left: 43%;
+    top: 50%;
+}
+.loader-cont .logo {
+    top: 40%;
+    left: 38%;
+    position: absolute;
+}
+.loader {
+    width: 148px;
+    height: 100px;
+    top: 50%;
+    left: 60%;
+    position: absolute;
+}
+.loader:after {
+    content: "";
+    top: auto;
+    position: absolute;
+    display: block;
+    animation: shadow 1.2s infinite linear;
+    -moz-animation: shadow 1.2s infinite linear;
+    bottom: 0em;
+    left: 0;
+    height: .25em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: #ACACAC;
+    opacity: 0.3;
+}
+
+.roller,
+.roller:last-child {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: rollercoaster 1.2s infinite linear;
+    -webkit-transform: rotate(135deg);
+    -moz-animation: rollercoaster 1.2s infinite linear;
+    -moz-transform: rotate(135deg);
+    animation: rollercoaster 1.2s infinite linear;
+    transform: rotate(135deg);
+}
+
+.roller:last-child {
+    left: auto;
+    right: 0;
+    -webkit-transform: rotate(-45deg);
+    -webkit-animation: rollercoaster2 1.2s infinite linear;
+    -moz-transform: rotate(-45deg);
+    -moz-animation: rollercoaster2 1.2s infinite linear;
+    transform: rotate(-45deg);
+    animation: rollercoaster2 1.2s infinite linear;
+}
+
+.roller:before,
+.roller:last-child:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #717171;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes rollercoaster {
+    0% {
+        -webkit-transform: rotate(135deg);
+    }
+    8% {
+        -webkit-transform: rotate(240deg);
+    }
+    20% {
+        -webkit-transform: rotate(300deg);
+    }
+    40% {
+        -webkit-transform: rotate(380deg);
+    }
+    45% {
+        -webkit-transform: rotate(440deg);
+    }
+    50% {
+        -webkit-transform: rotate(495deg);
+        opacity: 1;
+    }
+    50.1% {
+        -webkit-transform: rotate(495deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(495deg);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes rollercoaster2 {
+    0% {
+        opacity: 0;
+    }
+    49.9% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: rotate(-45deg);
+    }
+    58% {
+        -webkit-transform: rotate(-160deg);
+    }
+    70% {
+        -webkit-transform: rotate(-240deg);
+    }
+    80% {
+        -webkit-transform: rotate(-300deg);
+    }
+    90% {
+        -webkit-transform: rotate(-340deg);
+    }
+    100% {
+        -webkit-transform: rotate(-405deg);
+    }
+}
+@-webkit-keyframes shadow {
+    0% {
+        opacity: .3;
+        -webkit-transform: translateX(65px) scale(0.5, 0.5);
+    }
+    8% {
+        -webkit-transform: translateX(30px) scale(2, 2);
+    }
+    13% {
+        -webkit-transform: translateX(0px) scale(1.3, 1.3);
+    }
+    30% {
+        -webkit-transform: translateX(-15px) scale(0.5, 0.5);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: translateX(60px) scale(1.2, 1.2);
+        opacity: 0.3;
+    }
+    60% {
+        -webkit-transform: translateX(130px) scale(2, 2);
+        opacity: 0.05;
+    }
+    65% {
+        -webkit-transform: translateX(145px) scale(1.2, 1.2);
+    }
+    80% {
+        -webkit-transform: translateX(120px) scale(0.5, 0.5);
+        opacity: 0.1;
+    }
+    90% {
+        -webkit-transform: translateX(80px) scale(0.8, 0.8);
+    }
+    100% {
+        -webkit-transform: translateX(60px);
+        opacity: 0.3;
+    }
+}
+#loader2:after {
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+#loader2 .roller {
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+#loader3:after {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+#loader3 .roller {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+/***********PRE LOADER CSS ENDS********************/
+/* HOME PAGE CSS STARTS HERE */
+.container a {
+    color: #00B6C7;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+}
+.container {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+nav {
+    float: left;
+    margin-left: 5%;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: #ACACAC;
+    padding: 15px;
+    margin: 0;
+    z-index: 1;
+}
+.my-account {
+    float: right;
+    margin-top: 15px;
+}
+.my-account a {
+    padding: 5px 20px 8px 20px;
+    border: 1px solid #00B6C7;
+    border-radius: 27px;
+    color: #404040;
+    margin-left: 10px;
+}
+.my-account a:hover {
+    border: 1px solid #60B5C5;
+    border-radius: 27px;
+    color: #fff;
+    background-color: #00B6C7;
+    text-decoration: none;
+}
+.my-account a:focus {
+    text-decoration: none;
+}
+
+header .nav li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #999999;
+}
+header .nav li a:hover {
+    color: #00B6C7 !important;
+}
+header .nav li a.active {
+    color: #00B6C7 !important;
+}
+.slide-caption {
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+}
+section.forex-product {
+    padding-left: 14%;
+    padding-right: 14%;
+    margin-top: -64px;
+    display: block;
+    z-index:0;
+}
+ul.quicktabs-tabs li {
+    background-color: #00B6C7 !important;
+    float: left;
+    margin-left: 2px;
+}
+ul.quicktabs-tabs {
+    padding: 0;
+    margin: 0;
+
+}
+ul.quicktabs-tabs a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+div#quicktabs-container-main_product_tabs {
+    float: left;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-left: 3px;
+    padding: 30px;
+}
+ul.quicktabs-tabs li.active {
+    background-color: #F2F2F2 !important;
+}
+ul.quicktabs-tabs li.active a {
+    color: #00B6C7 !important;
+}
+ul.quicktabs-tabs li a {
+    text-decoration: none;
+}
+ul.quicktabs-tabs li.first {
+    border-radius: 30px 0px 0px 0px;
+}
+ul.quicktabs-tabs li a {
+    text-decoration: none;
+    padding:19px 25px 19px 25px;
+    float: left;
+}
+ul.quicktabs-tabs li.last {
+    border-radius: 0px 30px 0px 0px;
+}
+
+form#forex-form select {
+    float: left;
+    width: 40%;
+    border-radius: 21px;
+    background-color: #808080;
+    color: #fff;
+    margin: 0% 2% 2% 2%;
+}
+form#forex-form select {
+    float: left;
+    width: 40%;
+    border-radius: 21px;
+    background-color: #808080;
+    color: #fff;
+}
+form#forex-form {
+    float: left;
+    width: 60%;
+}
+.slide-caption h1 {
+    color: #717171;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #ACACAC;
+    padding: 15px;
+    margin: 0;
+    float: left;
+    width: 100%;
+    z-index: 9999;
+}
+.sticky {
+    position:fixed;
+}
+.form-control {
+    height: 30px;
+}
+
+input#edit-datetime-datepicker-popup-0 {
+    float: left;
+    border-radius: 21px;
+    background-color: #808080;
+    color: #fff;
+    content: 'Select Date';
+}
+.container-inline-date .date-padding {
+    padding: 10px;
+    float: left;
+    width: 44%;
+}
+.container-inline-date .date-padding {
+    padding: 0;
+    float: left;
+}
+
+.container-inline-date .date-padding{
+    padding: 0px;
+}
+.promotion-vedio img {
+    float: left;
+    width: 100%;
+	position: relative;
+}
+section.promotion-vedio h2{
+	color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+	position:absolute;	
+}
+section.promotion-vedio h5{
+	color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+	position:absolute;
+	padding-top:4%;
+}
+
+section.promotion-vedio h4{
+	color: #0097a5;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+	position:absolute;
+	padding-top: 18%;
+}
+.std-blue {
+    color: #60B5C5;
+    font-family: GothamRoundedBook;
+}
+section.forex-product {
+    padding-left: 14%;
+    padding-right: 14%; 
+    margin-top: -64px;
+    display: block;
+    z-index:0;
+    position: relative;
+}
+.inner-container {
+    /*width: 100%;
+    padding-right: 18%;
+    padding-left: 18%;*/
+        width: 1170px;
+    margin: auto;
+    position: relative;
+}
+section.rate-alert.inner-container {
+    float: left;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rate-alert p {
+    width: 65%;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+	font-weight:normal;
+}
+.std-blue {
+    color: #60B5C5;
+    font-weight: bold;
+}
+.rate-actions {
+    float: right;
+    width: 20%;
+}
+.rate-actions a {
+    float: left;
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 14px;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+.rate-actions i {
+    border: 1px solid;
+    border-radius: 50%;
+    color: #60b5c5;
+    float: left;
+    font-size: 15px;
+    height: 25px;
+    padding: 4px;
+    text-align: center;
+    width: 25px !important;
+	margin-right: 14px;
+	top: -4px;
+}
+.rate-actions .icon {
+    margin-bottom: 40px !important;
+}
+
+section.testimonials {
+    background: #f3f3f3 none repeat scroll 0 0;
+    float: left;
+    width: 100%;
+	text-align: center;
+	padding:5%;
+	position: relative;
+}
+h3.top-heading {
+    background: #0097a5 none repeat scroll 0 0;
+    color: #fff;
+    left: 0;
+    margin: auto;
+    max-width: 35%;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+section .images ul{
+	padding:0;
+}
+section .images ul li {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-top-left-radius: 10px;
+    display: inline-block;
+    list-style: outside none none;
+    margin-right: 9%;
+    width: 24%;
+	margin-bottom: 6%;
+}
+section .images ul li :last-child{
+	margin-right: 0;
+}
+
+
+
+/* HOME PAGE CSS END HERE */
+
+/* PRODUCT PAGE CSS STARTS HERE */
+.clear{
+	clear:both;
+}
+.all-pages{
+	padding-top:130px;
+	padding-bottom: 30px;
+}
+.inner-container h2.heading {
+    color: #00b7c7;
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-top: -21px;
+    text-transform: uppercase;
+    width: 300px;
+    margin: auto;
+    float: none;
+    height: auto;
+    clear: both;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+.product-heading{
+	max-width: 80%;
+	text-align: center;
+}
+.inner-container .left{
+	float:left;
+	max-width:25%;
+}
+.inner-container .left .tabs ul li{
+	color:#808080;
+	font-family:Source Sans Pro;
+	font-size:21px;
+	font-weight:normal;
+	text-align: end;
+}
+.inner-container .left .tabs  .nav>li>a:hover, .nav>li>a:focus{
+	background:none !important;
+}
+.inner-container .left .tabs ul li a{
+	color:#808080 !important;
+	padding:5px 14px;
+}
+.inner-container .left .tabs .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+	background:none !important;
+	color:#00b7c7 !important;
+}
+.inner-container .right {
+    border-left: 1px solid #818181;
+    float: right;
+    padding-left: 30px;
+    max-width: 75%;
+}
+.inner-container .right ul{
+	margin:0 !important;
+	padding-left:20px;
+}
+.inner-container .right .tab-content h3.que{
+	color:#818181;
+	font-family:Source Sans Pro;
+	font-size:15px;
+	font-weight:bold;
+	margin-top:15px;
+	cursor:pointer;
+}
+.inner-container .right .tab-content h3.que .glyphicon{
+	float:right;
+	font-size: 12px;
+	border: 1px solid;
+    border-radius: 50%;
+	padding:4px 4px 5px 6px;
+}
+.inner-container .right .tab-content h3.que:hover{
+	color:#00b7c7 !important;
+}
+.inner-container .right .tab-content p.ans{
+	color:#818181;
+	font-family:Source Sans Pro;
+	font-size:15px;
+	font-weight:normal;
+    width:90%;
+}
+.inner-container .right .tab-content ul li{
+	color:#818181;
+	font-family:Source Sans Pro;
+	font-size:15px;
+	font-weight:normal;
+}
+.inner-container .right .tab-content ul p{
+	color:#818181;
+	font-family:Source Sans Pro;
+	font-size:15px;
+	font-weight:normal;
+}
+.footer {
+    background: #f3f3f3;
+    padding-top: 28px;
+    border: none;
+    padding-bottom: 0;
+    float: left;
+    width: 100%;
+}
+.footer .inner-container .footer-menu{
+	display:inline-block;
+	vertical-align:top;
+}
+.footer .inner-container .footer-menu ul{
+	list-style:none;
+	padding:0 !important;
+
+}
+.footer .inner-container .footer-menu ul li{
+	list-style:none;
+}
+.footer .inner-container .footer-menu h4{
+	color:#0bb7c8;
+	font-family:Source Sans Pro;
+	font-size:15px;
+	font-weight:bold;
+}
+.footer .inner-container .footer-menu ul li a{
+	color:#717171;
+	font-family:Source Sans Pro;
+	font-size:14px;
+	font-weight:normal;
+}
+.footer .inner-container .footer-menu ul li a:hover{
+	text-decoration:none;
+}
+.footer .inner-container .footer-menu {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 50px;
+	margin-bottom: 15px;
+}.footer .inner-container .footer-menu:first-child{
+	padding-left: 0;
+}
+.footer .inner-container {
+    padding-left: 18%;
+    padding-right: 18%;
+	width:100%;
+}
+.footer-copyright {
+    background: #00b7c7;
+    padding: 10px 0 10px;
+    float: left;
+    width: 100%;
+}
+.footer-copyright .social-icon{
+	float:left;
+}
+.footer-copyright .social-icon ul{
+	padding:0 !important;
+	margin-top:10px;
+}
+.footer-copyright .social-icon ul li {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 28px;
+    list-style: outside none none;
+    padding: 2px 6px;
+    width: 28px;
+	margin-right: 6px;
+    text-align: center;
+}
+.fa-facebook::before {
+    content: "";
+}.fa-twitter::before {
+    content: "";
+}
+.fa-linkedin::before {
+    content: "";
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.footer-copyright .social-icon ul li a{
+	list-style:none;
+}
+.page-node-2 .inner-container p {
+    /* width: 100%; */
+    /* padding: 20px 20px 20px 0px; */
+    font-size: 20px;
+    font-family: Source Sans Pro;
+     color: #717171; 
+}
+.footer-copyright .submit-btn{
+	float:right;
+}
+.footer-copyright .submit-btn p {
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.footer-copyright .submit-btn form {
+    background: #0097a5 none repeat scroll 0 0;
+    border-radius: 20px;
+}
+.footer-copyright .submit-btn input.email {
+    background: #0097a5 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 20px;
+    color: #00b7c6;
+    height: 25px;
+    padding: 0 13px;
+    width: 170px;
+}
+.footer-copyright .submit-btn input.submit {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 20px;
+    color: #0097a5;
+    height: 25px;
+    padding: 0 8px;
+    width: 70px;
+}
+/* PRODUCT PAGE CSS END HERE */
+
+/* CONTACT PAGE CSS START HERE */
+.contact-page h6{
+	color:#717171;
+	font-family:Source Sans Pro;
+	font-size:24px;
+	font-weight:bold;
+}
+.contact-page  ul{
+	padding:0 !important;
+	list-style:none;
+}
+.contact-page  ul li{
+	display:inline-block;
+	list-style:none;
+	margin-right:70px;
+	vertical-align: top;
+}
+.contact-page  ul li p{
+	color:#717171;
+	font-family:Source Sans Pro;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+
+.contact-page .form-control {
+    display: inline-block;
+    margin-right: 2%;
+    max-width: 47%;
+    width: 100%;
+    height: 35px;
+    padding: 4px 10px;
+    border-radius: none;
+    border: 1px solid #818181;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    color: #A8A7A7;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    border-radius: 0px;
+    border-color: #BFBFBF;
+}
+.contact-page  textarea {
+	width:97%;
+	height:200px;
+	padding:4px 10px;
+	border-radius:none;
+	border:1px solid #BFBFBF;
+	font-family:Source Sans Pro;
+	font-size:24px;
+	color:#aaa9b5;
+	font-weight:normal;
+	text-transform:capitalize;
+	margin-bottom: 25px;
+}
+.contact-page  button {
+	width:212px;
+	height:40px;
+	padding:0 10px;
+	border-radius:none;
+	font-family:Source Sans Pro;
+	font-size:24px;
+	color:#fff;
+	font-weight:normal;
+	text-transform:capitalize;
+	margin-bottom: 25px;
+	background:#00b7c7;
+	float:right;
+	border:none;
+	margin-right:25px;
+}
+.contact-page  button:hover{
+	background:#00b7c7;
+	color:#fff;
+}
+.banner-img {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: -20px;
+    border: solid 1px #C7C7C7;
+    padding-bottom: 80px;
+}
+.page-node-2 .product-heading {
+    float: left;
+    max-width: 100%;
+    text-align: center !important;
+}
+
+/* CONTACT PAGE CSS END HERE */
+/*14-sep-css*/
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 14px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #808080;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 25px;
+}
+label {
+    color: #717171;
+    display: inline-block;
+    font-family: source sans pro;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.btn {
+    -moz-user-select: none;
+    background: #00B6C9 none repeat scroll 0 0 !important;
+    border: medium none;
+    border-top-right-radius: 10px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: source sans pro;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    margin-bottom: 0;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+div#edit-field-purpose-of-travels {
+    width: 48%;
+    float: left;
+}
+div#edit-field-no-of-travellers {
+    width: 48%;
+    float: right;
+}
+div#edit-field-card-type {
+    width: 48%;
+    float: left;
+    margin: 10px 0px 30px 0px;
+}
+div#edit-field-forex-product , div#edit-field-file-image-alt-text, div#edit-field-phone{
+    width: 48%;
+    float: right;
+}
+div#edit-field-forex-currency-type {
+    width: 48%;
+    float: left;
+}
+div#edit-field-exchange-amount {
+    width: 48%;
+    float: right;
+}
+.panel-default>.panel-heading {
+    color: #FFF;
+    background-color: #808080;
+    border-color: #808080;
+}
+div#edit-field-date-of-travel, div#edit-field-perpose-of-travel- , div#edit-field-email{
+    width: 48%;
+    float: left;
+}
+.field-type-commerce-price.field-name-field-forex-amount.field-widget-commerce-price-full.form-wrapper.form-group {
+    float: right;
+    width: 48%;
+}
+.field-type-list-text.field-name-field-user-title.field-widget-options-select.form-wrapper.form-group, .field-type-text.field-name-field-lname.field-widget-text-textfield.form-wrapper.form-group, .field-type-list-text.field-name-field-purpose-of-travel.field-widget-options-select.form-wrapper.form-group {
+    float: left;
+    width: 48%;
+}
+/*.field-type-text.field-name-field-fname.field-widget-text-textfield.form-wrapper.form-group, .field-type-text.field-name-field-mname.field-widget-text-textfield.form-wrapper.form-group {
+    float: right;
+    width: 48%;
+}*/
+.field-type-addressfield.field-name-field-delivery-address.field-widget-addressfield-standard.form-wrapper.form-group {
+    float: left;
+    width: 100%;
+	margin-right: 5%;
+}
+.form-type-checkboxes.form-item-field-accept-term-und.form-item.form-group {
+    float: left;
+    width: 60%;
+    margin-top: 1em !important;
+    margin-left: 60px;
+}
+
+input#edit-field-forex-amount-und-0-amount {
+    float: left;
+    width: 83%;
+}
+.form-type-textfield.form-item-field-forex-amount-und-0-amount.form-item.form-group {
+    font-size: 20px;
+}
+.form-type-textfield.form-item-field-forex-amount-und-0-amount.form-item.form-group  input{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 8px;
+}
+.form-item-field-forex-amount-und-0-amount label {
+    float: left;
+    width: 100%;
+}
+/* USER PAGE*/
+.page-user .main-container {
+    padding-top: 150px;
+    text-align: left;
+    width: 50%;
+}
+button#edit-submit {
+    background-color: #00B6C7;
+    border-color: #00B6C7;
+    color: #fff;
+}
+.page-user .create-account.clearfix {
+    float: left;
+    text-align: center;
+    padding-left: 90px;
+}
+.page-user div#user_login_form {
+    float: left;
+    width: 50%;
+}
+.page-user a.login-password {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* USER PAGE ENDS*/
+
+#quicktabs-container-main_product_tabs .step-format.step-default.step-buy-forex.skippable {
+    display: none;
+}
+div#edit-field-currencies {
+    float: left;
+    width: 48%;
+}
+/*
+*
+*********** CSS FOR BUY FOREX FORM
+*
+*/
+
+#edit-field-forex-amount2-und-0-value {
+    background-color: #fff;
+    border-radius: 0px 15px 15px 0px;
+}
+#edit-field-forex-amount2-und-0-value:focus {
+    border: 1px solid #04B7C8;
+}
+div#edit-field-forex-amount2 {
+    float: left;
+    width: 30%;
+}
+div#edit-field-currencies {
+    float: left;
+    width: 15%;
+}
+form#buy-forex-node-form {
+    float: left;
+    width: 60%;
+}
+/*
+.front .node-buy_forex-form label {
+    display: none;
+}*/
+.node-buy_forex-form .form-item-field-currencies-und select {
+    float: left;
+    margin-left: 30px;
+    height: 47px;
+    background-position:64%;
+}
+.node-buy_forex-form .form-type-checkbox.form-item-field-accept-term-und-1.form-item.checkbox label {
+    display: block !important;
+}
+.node-buy_forex-form .form-type-checkbox.form-item-field-accept-term-und-1.form-item.checkbox label {
+    display: block !important;
+}
+.node-buy_forex-form select#edit-field-card-type-und {
+    margin-left: 0px;
+}
+button#edit-preview {
+    display: none;
+}
+.node-buy_forex-form  .form-actions {
+    clear: none;
+    margin: 25px -10px 0;
+    float: left;
+    position: absolute;
+    bottom: 61px;
+    left: 51%;
+}
+.form-item-field-forex-amount2-und-0-value .form-control {
+    height: 47px;
+    color: #000;
+}
+div#edit-field-accept-term {
+    float: left;
+}
+/*
+*
+*********** CSS FOR BUY FOREX FORM ENDS
+*
+*/
+
+/**Arjun css start**/
+div#edit-field-card-type{
+	float: right;
+}
+#buyforex-nodeform form{
+	width: 60%;
+    float: left;
+}
+#buyforex-nodeform .view-currency{
+	width:100%;
+	float: right;
+}
+/*
+#buyforex-nodeform form .form-wrapper{
+	width: 48%;
+	float: left;
+	margin: 0 10px 15px 0;
+}*/
+
+#buyforex-nodeform form .form-wrapper fieldset{
+	width: 100%;
+}
+
+#buyforex-nodeform form .field-name-field-currencies{
+	float: left;
+    width: 18%;
+    text-align: right;
+        margin-left: 20px;
+}
+#buyforex-nodeform form .field-name-field-forex-amount2{
+	float: left;
+    width: 23%;
+    text-align: center;
+}
+#buyforex-nodeform form .field-name-field-forex-amount2 input{
+	background-color: #fff;
+    /*border-radius: 0px 15px 15px 0px;*/
+    border-radius:0px;
+        max-width: 100%;
+        border: solid 1px #00B6C9;
+}
+/*
+#buyforex-nodeform form .form-actions {
+    clear: none;
+    width: inherit;
+    margin: 1px -29px;
+    float: left;
+} */
+#buyforex-nodeform form button#edit-preview--4{
+	display: none;
+}
+
+#buyforex-nodeform form .field-name-field-accept-term{
+	clear: both;
+    width: 43.7%;
+}
+
+#buyforex-nodeform form div.step-traveller-details{
+    float: left;
+    width: 100%;
+}
+.currency-block{
+	float: right;
+  width: 35%;
+}
+/**Arjun css end**/
+
+
+/** virender css **/
+.even h2 {
+     font-family: 'Source Sans Pro';
+     font-size: 20px;
+     color:#717171;
+     letter-spacing:1px;
+}
+.address {
+    float: left;
+    width: 300px;
+    color: #717171;
+    font-family: 'Source Sans Pro';
+    letter-spacing:1px;
+    font-size:16px;
+}
+.address i.fa.fa-map-marker {
+    color: #60B5C5;
+    float: left;
+    margin-right: 8px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.phn p {
+    color: #717171;
+    font-family: 'Source Sans Pro';
+    letter-spacing:2px;
+    font-size: 16px;
+}
+.phn a {
+    color: #717171;
+    font-family: 'Source Sans Pro';
+    letter-spacing:2px;
+    text-decoration: none;
+    outline:none;
+    font-size:16px !important;
+}
+.phn i.fa.fa-phone {
+    color: #60B5C5;
+    float: left;
+    margin-right: 10px;
+    border: solid 1px #60B5C5;
+    border-radius: 100%;
+    width: 23px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-top: 1px;
+}
+.phn i.fa.fa-envelope-o {
+    color: #60B5C5;
+    margin-right:5px;
+    font-size: 19px;
+    margin-top: 6px;
+}
+.field-item.even {
+    /*margin-bottom: 40px;*/
+}
+.form-control {
+        font-family: 'Source Sans Pro';
+    font-size: 16px;
+    text-transform: inherit;
+}
+.field-name-field-traveler-details tbody .draggable {
+    display:none;
+}
+.field-name-field-traveler-details tbody tr:first-child{
+    display: block;
+}
+.field-name-field-traveler-details .field-multiple-drag {
+    display:none;
+}
+.field-name-field-traveler-details div.tabledrag-toggle-weight-wrapper {
+    display:none;
+}
+.field-name-field-traveler-details tbody tr td{
+    float:left;
+    width: 100%;
+}
+#buyforex-add-more .form-group {
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+}
+.form-type-date-popup {
+    width: 30% !important;
+    margin-left: 0px !important;
+}
+#buyforex-add-more .container-inline-date label {
+    float: left;
+}
+#buyforex-add-more .container-inline-date {
+    float: left;
+    clear: none;
+    margin-left: 20px;
+    width: 25%
+}
+#buyforex-add-more .form-type-date-popup {
+    float: left !important;
+    width: 100% !important;
+}
+#buyforex-add-more #names-fieldset-wrapper {
+    float: left;
+    width: 100%
+}
+#buyforex-add-more .form-item-names-fieldset-date-date label{
+    display: none;
+}
+#buyforex-add-more #edit-names-fieldset-date {
+    float: left;
+    width: 100%;
+}
+#buyforex-add-more .form-item-names-fieldset-date-date {
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+#buyforex-add-more .form-submit{
+    float: left;
+    margin: 10px;
+    border-radius: 0px;
+    padding:10px 15px;
+}
+.form-type-date-popup label{
+    width: 100%;
+    margin-top: 5px;
+}
+.purpose {
+    float: left;
+    margin: 30px 10px;
+    padding: 5px 10px;
+    background: #00B6C9;
+    border-radius: 100%;
+    color: #fff !important;
+    cursor: pointer;
+    font-size:12px !important;
+}
+.purpose-tooltip {
+    position: absolute;
+    left: 310px;
+    top: 30px;
+    background: #000;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0.6
+}
+div.form-type-textfield.form-item-names-fieldset-1-name-1.form-item.form-group {
+    width: 20% !important;
+}
+div.form-type-textfield.form-item-names-fieldset-2-name-2.form-item.form-group {
+    width: 20% !important;
+}
+div.form-type-textfield.form-item-names-fieldset-3-name-3.form-item.form-group {
+    width: 20% !important;
+}
+div.form-type-textfield.form-item-names-fieldset-4-name-4.form-item.form-group {
+    width: 20% !important;
+}
+div.form-type-textfield.form-item-names-fieldset-5-name-5.form-item.form-group {
+    width: 20% !important;
+}
+div.form-type-textfield.form-item-names-fieldset-6-name-6.form-item.form-group {
+    width: 20% !important;
+}
+.date-padding {
+    width: 100%;
+}
+#names-fieldset-wrapper .form-type-select.form-item.form-group {
+    width: 25%;
+}
+.form-type-checkbox.form-item-names-fieldset-privacy-policy.form-item.checkbox {
+    float: left;
+}
+/*** end **/
+.secondary li {
+    margin-top: 7px;
+}
+.secondary li a {
+    color: #777;
+    font-size: 12px !important;
+    padding: 8px;
+}
+.slide-caption h1 {
+    color: #717171;
+    font-size: 42px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.form-type-select.form-item-names-fieldset-1-currency-1.form-item.form-group {
+    float: left;
+    width: 11% !important;
+}
+.form-type-select.form-item-names-fieldset-1-product-1.form-item.form-group {
+    width: 33% !important;
+}
+/*===============================================================
+  ADDITIONAL CSS HERE :)
+===============================================================*/
+
+.navbar-collapse.collapse {
+    float: left;
+    width: 50%;
+}
+.navbar-header {
+    float: left;
+    width: 350px;
+}
+section.col-md-12.banner {
+    max-height: 450px;
+}
+.social-icons .fa {
+    border: 2px solid;
+    padding: 9px 12px 9px 10px;
+    color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.social-icons span {
+    float: left;
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 12px;
+    color: #fff;
+}
+/*===============================================================
+  ADDITIONAL CSS ENDS HERE :)
+===============================================================*/
